@@ -1,0 +1,2 @@
+#Copier la commande pour qu'elle fonctionne
+sudo tail -f /var/log/syslog &
