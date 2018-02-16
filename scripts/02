@@ -1,0 +1,6 @@
+#! /bin/sh
+
+crontab -l > myCron
+echo "0 4 * * 1 apt-get update && apt-get upgrade > /var/log/update_script.log" >> myCron
+crontab myCron
+rm myCron
